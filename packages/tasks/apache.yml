@@ -1,0 +1,7 @@
+---
+- name: install apache
+      package:
+        name: "{{ package_name }}"
+        state: present
+      notify:
+        - restartand  enable apach

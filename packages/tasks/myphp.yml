@@ -1,0 +1,7 @@
+---
+- name: copy the home page
+    copy:
+      src: info.php
+      dest: /var/www/html/phpinfo.php
+    notify:
+      - restart and  enable apach

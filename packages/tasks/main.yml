@@ -1,0 +1,6 @@
+---
+# tasks file for package
+
+- include_tasks: apache.yml
+- include_tasks: httpd.yml
+- include_tasks: myphp.yml
