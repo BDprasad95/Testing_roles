@@ -3,6 +3,12 @@
 
 - name: restart and enable apache
   service:
-    name: "{{ package_name }}"
+    name: apache
+    enabled: yes
+    state: restarted
+    
+- name: restart and enable apache
+  service:
+    name: tree
     enabled: yes
     state: restarted
